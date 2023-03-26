@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formulaire</title>
+	<style>
+	
+		/* Style pour l'image */
+		.image-container {
+			text-align: center;
+			margin-top: 50px;
+		}
+		/* Style pour le formulaire */
+		form {
+			margin-top: 50px;
+			text-align: center;
+		}
+		form label {
+			display: block;
+			margin-top: 10px;
+		}
+		form input[type="text"], form input[type="email"], form input[type="password"] {
+			display: block;
+			margin: 10px auto;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			width: 250px;
+			max-width: 100%;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+		form button {
+			margin-top: 10px;
+			
+			background-color: #333;
+			color: white;
+			
+			font-size: 16px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav>
+		<a href="#">Accueil</a>
+		<a href="#">A propos</a>
+		<a href="#">Contact</a>
+	</nav>
+	<!-- Image -->
+	<div class="image-container">
+		<a href="inscri.html"><img src="12.jpg" alt=" photo ne peut pas s'affichier"></a>
+	</div>
+	<!-- Formulaire -->
+	<form>
+		<label >Nom :</label>
+		<input type="text" id="nom" name="nom"  placeholder="écrire votre nom "required>
+		<label >Adresse email :</label>
+		<input type="email" id="email" name="email" placeholder="écrire votre mail" required>
+		<label>Mot de passe :</label>
+		<input type="password" id="password" name="password" placeholder="écrire votre propre mot de passe" required>
+		<label >Numéro de téléphone :</label>
+		<input type="text" id="num" name="num"  placeholder="écrire votre numéro de téléphone "required>
+		<label >genre:</label>
+		<input type="checkbox" id="homme" name="homme" checked>homme<input type="checkbox" id="femme" name="femme" >femmme
+		<label >Adresse :</label>
+		<input type="text" id="adresse" name="adresse" placeholder="écrire votre adresse " required>
+		<label >Language</label>
+		<select>
+			<option value="francais">francais</option>
+			<option value="anglais">anglais</option>
+			<option value="arabe">anglais</option>
+		</select> 
+		
+		<br>
+		<label >about:</label>
+<textarea id="about" name="about"
+          rows="5" cols="33">
+</textarea>
+<br>
+		<button type="submit">S'inscrire</button>
+	</form>
+</body>
+</html>
